@@ -1,0 +1,41 @@
+nav {
+    width: 100%;
+
+    border: 0.5px solid gray;
+    height: 200px;
+}
+
+.blue_polosa {
+    width: 100%;
+    background-color: rgb(32, 32, 194);
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.content_1,
+.content_2,
+.content_3 {
+    border: 1px solid white;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+
+    color: white;
+
+}
+
+.content_1 a,
+.content_2 p,
+.content_3 a {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    font-size: 1.1em;
+
+
+}
