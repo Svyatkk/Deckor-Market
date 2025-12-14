@@ -5,6 +5,9 @@ export default function Nav() {
 
 
 
+    const [open, setOpen] = useState(false)
+
+
 
 
 
@@ -53,8 +56,35 @@ export default function Nav() {
 
                         <div className="href_buttons_types">
 
-                            <a href="">Laminate</a>
+                            <a
+                                onMouseEnter={() => setOpen(true)}
+                                onMouseLeave={() => setOpen(false)}
 
+                                className={open ? "active" : ""}
+
+
+
+
+                                href="">Laminate</a>
+
+
+                            <div
+                                onMouseEnter={() => setOpen(true)}
+                                onMouseLeave={() => {
+                                    setTimeout(() => {
+                                        setOpen(false)
+                                    }, 1000);
+                                }}
+
+                                className={`block ${open ? "show" : ""}`}
+                            >
+
+
+
+
+
+
+                            </div>
 
 
                         </div>

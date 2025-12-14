@@ -2,6 +2,7 @@ nav {
     width: 100%;
 
 
+    background-color: white;
     align-items: center;
 
     display: flex;
@@ -78,6 +79,8 @@ header {
     width: 100px;
     height: 20px;
     bottom: 15px;
+
+
 }
 
 .logo_input_block .logo {
@@ -139,5 +142,54 @@ header {
     font-size: 1.1em;
     font-weight: bold;
 
+    position: relative;
+}
 
+
+
+.href_buttons_types a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    bottom: -4px;
+    left: 0px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.href_buttons_types a:hover::before {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.handler {
+    border: 1px solid rebeccapurple;
+    position: relative;
+
+}
+
+.block {
+    position: absolute;
+    width: calc(100% + 500px);
+    height: 300px;
+    background-color: black;
+    z-index: 100;
+    border-radius: 25px;
+    display: block;
+    z-index: -1000;
+    top: -280px;
+    transition: 0.5s;
+}
+
+.href_buttons_types a.active+.block {
+    display: block;
+    top: 30px;
+    transition: 0.5s;
+}
+
+.block .show {
+
+    display: block;
 }
