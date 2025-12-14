@@ -1,16 +1,22 @@
 nav {
     width: 100%;
 
+
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
     border: 0.5px solid gray;
-    height: 200px;
+    height: 220px;
 }
 
 .blue_polosa {
     width: 100%;
     background-color: rgb(32, 32, 194);
     margin: 0;
-    padding: 0;
-    height: 40px;
+
+
+    height: 50px;
     display: flex;
     overflow: hidden;
     justify-content: space-between;
@@ -23,7 +29,9 @@ nav {
     height: 100%;
     display: flex;
     gap: 20px;
-
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
     color: white;
 
 }
@@ -36,6 +44,28 @@ nav {
     align-items: center;
     display: flex;
     font-size: 1.1em;
+
+}
+
+.content_3 a:last-child {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    height: 6px;
+    margin-left: 30px;
+}
+
+header {
+    border: 1px solid black;
+    width: 90%;
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+.logo_input_block,
+.login_block {
+    width: 50%;
+    border: 1px solid purple;
 
 
 }

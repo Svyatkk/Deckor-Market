@@ -19,11 +19,26 @@ export default function Nav() {
                     <div className="content_3">
                         <a href="#">Instagram Feed</a>
                         <a href="#">Inspiration Gallery</a>
-                        <a href=""></a>
+                        <a href=""><img src="DeckorMarket\public\icons8-instagram-64.png" alt="" /></a>
                     </div>
+
                 </div>
 
 
+                <header>
+
+
+                    <div className="logo_input_block">
+
+                    </div>
+
+
+                    <div className="login_block">
+
+                        x
+                    </div>
+
+                </header>
 
             </nav>
 
