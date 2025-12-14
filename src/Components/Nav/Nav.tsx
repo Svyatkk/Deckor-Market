@@ -1,7 +1,14 @@
 import React from "react"
 import './Nav.css'
-
+import { useState } from "react"
 export default function Nav() {
+
+
+
+
+
+
+
     return (
         <>
             <nav>
@@ -21,21 +28,42 @@ export default function Nav() {
                         <a href="#">Inspiration Gallery</a>
                         <a href=""><img src="DeckorMarket\public\icons8-instagram-64.png" alt="" /></a>
                     </div>
-
                 </div>
-
 
                 <header>
 
 
                     <div className="logo_input_block">
+                        <div className="logo">
 
+                        </div>
+
+                        <label>
+                            <select name="" id="">
+
+                                <option value="">All Categories</option>
+                                <option value="">laminate</option>
+                                <option value="">louver</option>
+                                <option value="">veneer</option>
+
+
+                            </select>
+                            <div className="palka"></div>
+                            <input type="text" /></label>
+
+                        <div className="href_buttons_types">
+
+                            <a href="">Laminate</a>
+
+
+
+                        </div>
                     </div>
 
 
                     <div className="login_block">
 
-                        x
+
                     </div>
 
                 </header>

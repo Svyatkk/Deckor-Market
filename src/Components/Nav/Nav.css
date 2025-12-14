@@ -7,7 +7,8 @@ nav {
     display: flex;
     flex-direction: column;
     border: 0.5px solid gray;
-    height: 220px;
+    height: 240px;
+
 }
 
 .blue_polosa {
@@ -25,7 +26,7 @@ nav {
 .content_1,
 .content_2,
 .content_3 {
-    border: 1px solid white;
+
     height: 100%;
     display: flex;
     gap: 20px;
@@ -56,7 +57,6 @@ nav {
 }
 
 header {
-    border: 1px solid black;
     width: 90%;
     display: flex;
     height: calc(100% - 50px);
@@ -65,7 +65,79 @@ header {
 .logo_input_block,
 .login_block {
     width: 50%;
-    border: 1px solid purple;
+    position: relative;
+    align-items: center;
+    display: flex;
+
+
+
+}
+
+.href_buttons_types {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 15px;
+}
+
+.logo_input_block .logo {
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 25px;
+
+    height: 80px;
+}
+
+.logo_input_block label {
+    width: 600px;
+    background-color: rgb(235, 232, 232);
+    margin-left: 40px;
+    height: 55px;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+
+
+}
+
+.logo_input_block input {
+    height: 100%;
+    width: 65%;
+    background-color: transparent;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+
+
+    font-size: 1.1em;
+}
+
+.logo_input_block label select {
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 20px;
+    position: relative;
+    color: black;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+}
+
+.palka {
+    height: 70%;
+    background-color: rgb(206, 204, 204);
+    width: 1px;
+}
+
+.href_buttons_types a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
 
 
 }
