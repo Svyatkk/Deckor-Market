@@ -1,7 +1,4 @@
-
-
-
-
+import { books } from "../../Data/book";
 
 
 export default function Main() {
@@ -11,7 +8,11 @@ export default function Main() {
 
 
 
-
+            {books.map(book => (
+                <div key={book.name}>
+                    {book.author}
+                </div>
+            ))}
         </>
-    )
+    );
 }

@@ -1,4 +1,4 @@
-interface BooksParam {
+export interface BooksParam {
     author: string;
     price: number;
     name: string;
@@ -6,13 +6,13 @@ interface BooksParam {
     publishing: string;
     cover: CoverType;
     language: string;
+    popularity: number
 }
 
-enum CoverType {
+export enum CoverType {
     Hard = "Тверда",
     Soft = "Мʼяка"
 }
-
 
 export const books: BooksParam[] = [
     {
@@ -22,13 +22,8 @@ export const books: BooksParam[] = [
         pageAmount: 328,
         publishing: "Видавництво Старого Лева",
         cover: CoverType.Hard,
-        language: "Українська"
+        language: "Українська",
+        popularity: 0
+
     }
 ];
-
-
-
-function createBook(book: BooksParam): BooksParam {
-    books.push(book);
-    return book;
-}
