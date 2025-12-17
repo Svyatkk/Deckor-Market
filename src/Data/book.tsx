@@ -1,4 +1,4 @@
-export interface BooksParam {
+export type BooksParam = {
     author: string;
     price: number;
     name: string;
@@ -6,13 +6,15 @@ export interface BooksParam {
     publishing: string;
     cover: CoverType;
     language: string;
-    popularity: number
+    popularity: number;
+
 }
 
 export enum CoverType {
     Hard = "Тверда",
     Soft = "Мʼяка"
 }
+
 
 export const books: BooksParam[] = [
     {

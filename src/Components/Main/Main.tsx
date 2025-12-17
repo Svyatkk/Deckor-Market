@@ -1,18 +1,28 @@
+import { ReactNode } from "react";
 import { books } from "../../Data/book";
+import { BooksParam } from "../../Data/book";
+import BlockBook from "../BlockBook/BlockBook";
 
 
-export default function Main() {
+type MainProps = {
+    children?: ReactNode;
+
+
+
+}
+
+export default function Main({ children }: MainProps) {
+
+
+
     return (
+
         <>
 
 
 
+            {children}
 
-            {books.map(book => (
-                <div key={book.name}>
-                    {book.author}
-                </div>
-            ))}
         </>
     );
 }

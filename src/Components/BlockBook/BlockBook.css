@@ -1,0 +1,10 @@
+.block {
+    border: 1px solid black;
+    max-width: 500px !important;
+    border-radius: 10px;
+
+
+    height: 200px;
+    margin: 100px;
+    padding: 0;
+}
