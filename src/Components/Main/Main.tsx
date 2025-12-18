@@ -3,6 +3,7 @@ import { books } from "../../Data/book";
 import { BooksParam } from "../../Data/book";
 import BlockBook from "../BlockBook/BlockBook";
 
+import "./Main.css";
 
 type MainProps = {
     children?: ReactNode;
@@ -13,15 +14,16 @@ type MainProps = {
 
 export default function Main({ children }: MainProps) {
 
-
-
     return (
 
         <>
 
 
+            <main >
+                {children}
 
-            {children}
+
+            </main>
 
         </>
     );

@@ -17,6 +17,31 @@ export default function Nav() {
 
             <nav>
 
+                <div className="logo">
+                </div>
+
+                <div className="searching_block">
+
+                </div>
+
+                <div className="buttons_client">
+
+
+                    <div>
+
+                    </div>
+
+
+                    <div>
+
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+
+
 
             </nav>
 

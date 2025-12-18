@@ -10,7 +10,6 @@ export default function BlockBook() {
 
 
 
-
                 {books.map(book => (
                     <div key={book.name}>
                         {book.author}

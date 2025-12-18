@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
 
-      <Nav></Nav>
 
 
       <Main>
+        <Nav></Nav>
 
         <BlockBook></BlockBook>
 
