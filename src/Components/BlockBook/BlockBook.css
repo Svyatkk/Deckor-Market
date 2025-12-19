@@ -1,10 +1,27 @@
 .block {
     border: 1px solid black;
-    max-width: 500px !important;
-    border-radius: 10px;
-
-
-    height: 200px;
+    max-width: 250px !important;
+    border-radius: 15px;
+    background-color: white;
+    height: 400px;
     margin: 100px;
     padding: 0;
+    text-align: left;
+    background-color: rgb(26, 26, 26);
+
+}
+
+.author_block {
+    margin: 10px;
+    color: gray;
+}
+
+.name_block {
+    margin: 10px;
+    color: white;
+}
+
+.price_block {
+    margin: 10px;
+    color: white;
 }

@@ -22,7 +22,27 @@ export default function Nav() {
 
                 <div className="searching_block">
 
+
+                    <a href="#" className="button_catalog">
+
+
+                        Catalog
+
+                    </a>
+
+                    <label htmlFor=""><input className="input_search" type="text" />
+
+
+                    </label>
+
+                    <button className="button_change_theme">
+
+
+
+                    </button>
                 </div>
+
+
 
                 <div className="buttons_client">
 

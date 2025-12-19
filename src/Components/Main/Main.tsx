@@ -7,9 +7,6 @@ import "./Main.css";
 
 type MainProps = {
     children?: ReactNode;
-
-
-
 }
 
 export default function Main({ children }: MainProps) {
@@ -17,7 +14,6 @@ export default function Main({ children }: MainProps) {
     return (
 
         <>
-
 
             <main >
                 {children}

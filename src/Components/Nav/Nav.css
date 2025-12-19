@@ -7,11 +7,13 @@ nav {
     align-items: center;
 }
 
+
+
 .logo {
     max-width: 200px;
     border: 1px solid gray;
     border-radius: 15px;
-    height: 100%;
+    height: 70%;
     width: 100%;
 }
 
@@ -20,7 +22,9 @@ nav {
     height: 80%;
     border: 1px solid gray;
     border-radius: 15px;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -43,5 +47,42 @@ nav {
     height: 80%;
     width: 80px;
     display: inline-block;
+
+}
+
+.button_catalog {
+    max-width: 150px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: white;
+    height: 70%;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.searching_block label {
+    height: 70%;
+}
+
+.input_search {
+    width: 600px;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+
+    background-color: rgb(17, 15, 15);
+}
+
+.button_change_theme {
+    height: 80%;
+    border-radius: 50%;
+    width: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(17, 15, 15);
 
 }
