@@ -16,7 +16,6 @@ function App() {
       <Main>
         <Nav></Nav>
 
-        <BlockBook></BlockBook>
 
       </Main>
 
