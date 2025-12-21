@@ -5,16 +5,8 @@ import { useEffect } from "react"
 
 export default function Nav() {
 
-
-
-
-
     return (
         <>
-
-
-
-
             <nav>
 
                 <div className="logo">
@@ -24,32 +16,31 @@ export default function Nav() {
 
 
                     <a href="#" className="button_catalog">
-
-
                         Catalog
+
 
                     </a>
 
-                    <label htmlFor=""><input className="input_search" type="text" />
+                    <label htmlFor="">
 
+
+                        <input className="input_search" type="text" />
 
                     </label>
 
                     <button className="button_change_theme">
 
-
-
                     </button>
+
                 </div>
 
-
-
                 <div className="buttons_client">
-
 
                     <div>
 
                     </div>
+
+
 
 
                     <div>

@@ -16,7 +16,6 @@ export enum CoverType {
     Soft = "Мʼяка"
 }
 
-
 export const books: BooksParam[] = [
     {
         author: "Джордж Орвелл",
@@ -33,9 +32,8 @@ export const books: BooksParam[] = [
 
 
 
-
     {
-        author: "Джордж Орвелл",
+        author: "Хтось Хтось",
         name: "1984",
         price: 320,
         pageAmount: 328,
@@ -45,5 +43,18 @@ export const books: BooksParam[] = [
         popularity: 0,
         imgHref: ""
 
+    }, {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: ""
     }
 ];
+
+
+
