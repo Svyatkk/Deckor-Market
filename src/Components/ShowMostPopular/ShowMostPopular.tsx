@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { calcSalary } from "../../Data/book"
 import "swiper/css"
 import "swiper/css/pagination"
+import BanerBookBlock from "../BanerBookBlock/BanerBookBlock"
 
 
 
@@ -22,7 +23,11 @@ export default function ShowMostPopular() {
 
 
 
-                    < BlockBook book={{ ...book, price: calcSalary(book.price, 13) }} ></BlockBook>
+
+
+                    < BlockBook book={{ ...book, price: calcSalary(book.price, 13), salarydiscount: true }} children={<BanerBookBlock></BanerBookBlock>}></BlockBook>
+
+
 
 
 

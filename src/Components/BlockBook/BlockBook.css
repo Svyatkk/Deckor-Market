@@ -9,7 +9,18 @@
     padding: 20px;
     transition: 0.3s ease-in-out;
     background-color: #24211e;
+    position:
+        relative;
+    z-index: 10000;
 
+}
+
+.baner {
+    position: absolute;
+    top: -20px;
+
+
+    left: 5px;
 }
 
 .author_block {
@@ -39,6 +50,8 @@
     justify-content: center;
     align-items: center;
     transition: 0.3s ease-in-out;
+
+
 }
 
 

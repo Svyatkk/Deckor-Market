@@ -7,7 +7,11 @@ export default function BanerBookBlock() {
     return (
         <>
 
-            <section className="baner">
+            <section className="baner_block">
+
+
+
+
 
                 Акція
 
