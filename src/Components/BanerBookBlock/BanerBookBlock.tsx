@@ -9,6 +9,9 @@ export default function BanerBookBlock() {
 
             <section className="baner">
 
+                Акція
+
+
 
             </section>
         </>

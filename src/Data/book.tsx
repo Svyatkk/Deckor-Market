@@ -7,14 +7,22 @@ export type BooksParam = {
     cover: CoverType;
     language: string;
     popularity: number;
-    imgHref: string
+    imgHref: string;
+    salarydiscount: boolean
 }
+
 
 
 export enum CoverType {
     Hard = "Тверда",
     Soft = "Мʼяка"
 }
+
+
+export function calcSalary(price: number, amount: number): number {
+    return price - (price * amount) / 100
+}
+
 
 export const books: BooksParam[] = [
     {
@@ -26,8 +34,8 @@ export const books: BooksParam[] = [
         cover: CoverType.Hard,
         language: "Українська",
         popularity: 0,
-        imgHref: ""
-
+        imgHref: "",
+        salarydiscount: false
     },
 
 
@@ -41,7 +49,9 @@ export const books: BooksParam[] = [
         cover: CoverType.Hard,
         language: "Українська",
         popularity: 0,
-        imgHref: ""
+        imgHref: "",
+        salarydiscount: false
+
 
     }, {
         author: "Фтщерук Хтось",
@@ -52,7 +62,9 @@ export const books: BooksParam[] = [
         cover: CoverType.Hard,
         language: "Українська",
         popularity: 0,
-        imgHref: ""
+        imgHref: "",
+        salarydiscount: false
+
     }
     , {
         author: "Фтщерук Хтось",
@@ -63,7 +75,9 @@ export const books: BooksParam[] = [
         cover: CoverType.Hard,
         language: "Українська",
         popularity: 0,
-        imgHref: ""
+        imgHref: "",
+        salarydiscount: false
+
     }
     , {
         author: "Фтщерук Хтось",
@@ -74,22 +88,30 @@ export const books: BooksParam[] = [
         cover: CoverType.Hard,
         language: "Українська",
         popularity: 0,
-        imgHref: ""
-    }
-    , {
-        author: "Фтщерук Хтось",
-        name: "Соляріс",
-        price: 320,
-        pageAmount: 328,
-        publishing: "Видавництво Старого Лева",
-        cover: CoverType.Hard,
-        language: "Українська",
-        popularity: 0,
-        imgHref: ""
-    }
+        imgHref: "",
+        salarydiscount: false
 
 
+
+    }
+    , {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false
+
+
+
+    }
 ];
+
+
 
 
 
