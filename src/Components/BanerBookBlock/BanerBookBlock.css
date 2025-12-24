@@ -9,3 +9,15 @@
 
 
 }
+
+.baner_Акція {
+    background-color: green;
+}
+
+.baner_Новинка {
+    background-color: blue;
+}
+
+.baner_Ексклюзив {
+    background-color: red;
+}

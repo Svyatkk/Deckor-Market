@@ -1,33 +1,22 @@
 import './BlockBook.css'
 import { books, BooksParam } from "../../Data/book";
 import BanerBookBlock from '../BanerBookBlock/BanerBookBlock';
-import { ReactNode } from 'react';
+import { Children, ReactNode } from 'react';
+
 type BlockBookProps = {
     book: BooksParam;
-    children?: ReactNode
+    childrenBaner?: ReactNode
 }
 
 
 
 
-export default function BlockBook({ book }: BlockBookProps) {
+export default function BlockBook({ book, childrenBaner }: BlockBookProps) {
     return (
         <>
-
-
-
             <div className='block'>
                 <div className='baner'>
-
-
-                    <BanerBookBlock
-                        textBaner={book.salarydiscount === true ? 'Акція' : 'Ексклюзив'}
-                    />
-
-
-
-
-
+                    {childrenBaner}
                 </div>
 
                 <p className='author_block'>{book.author}</p>

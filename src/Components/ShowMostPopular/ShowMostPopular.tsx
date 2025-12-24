@@ -21,9 +21,7 @@ export default function ShowMostPopular() {
                 </h1>
 
                 {books.filter(book => book.price > 200 && book.salarydiscount === true).map((book) => (
-                    < BlockBook book={{ ...book, price: calcSalary(book.price, 13) }} children={<BanerBookBlock textBaner="Акція"></BanerBookBlock>}></BlockBook>
-
-
+                    < BlockBook book={{ ...book, price: calcSalary(book.price, 13) }} childrenBaner={<BanerBookBlock textBaner="Акція"></BanerBookBlock>}></BlockBook>
 
                 ))}
             </div >

@@ -4,22 +4,23 @@ import { books } from '../../Data/book'
 
 
 
-type BanerProps = {
-    textBaner: 'Акція' | 'Новинка' | 'Ексклюзив'
+export type BanerProps = {
 
-
+    textBaner: 'Акція' | 'Новинка' | 'Ексклюзив' | null
 }
 
+
+
 export default function BanerBookBlock({ textBaner }: BanerProps) {
+    if (!textBaner) return null
+
+
 
     return (
         <>
 
-            <section className="baner_block">
-
-
+            <section className={`baner_block baner_${textBaner}`}>
                 {textBaner}
-
             </section>
         </>
     )
