@@ -12,6 +12,7 @@ import BanerBookBlock from "../BanerBookBlock/BanerBookBlock"
 
 export default function ShowMostPopular() {
 
+
     return (
         <>
 
@@ -22,8 +23,8 @@ export default function ShowMostPopular() {
 
                 {books.filter(book => book.price > 200 && book.salarydiscount === true).map((book) => (
                     < BlockBook book={{ ...book, price: calcSalary(book.price, 13) }} childrenBaner={<BanerBookBlock textBaner="Акція"></BanerBookBlock>}></BlockBook>
-
                 ))}
+
             </div >
         </>
     )

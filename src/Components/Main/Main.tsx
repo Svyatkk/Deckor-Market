@@ -4,6 +4,7 @@ import { BooksParam } from "../../Data/book";
 import BlockBook from "../BlockBook/BlockBook";
 import "./Main.css";
 import ShowMostPopular from "../ShowMostPopular/ShowMostPopular";
+import ShowPagePopularity from "../ShowPagePopularity/ShowPagePopularity";
 
 
 type MainProps = {
@@ -22,8 +23,7 @@ export default function Main({ children }: MainProps) {
 
                 {children}
                 <ShowMostPopular></ShowMostPopular>
-
-
+                <ShowPagePopularity></ShowPagePopularity>
             </main>
 
         </>

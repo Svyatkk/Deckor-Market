@@ -1,0 +1,13 @@
+.block_popular {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 50px;
+    margin-top: 100px;
+    border: 1px solid red;
+    border-radius: 25px;
+
+
+}
