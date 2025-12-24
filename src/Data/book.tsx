@@ -8,10 +8,12 @@ export type BooksParam = {
     language: string;
     popularity: number;
     imgHref: string;
-    salarydiscount: boolean
+    salarydiscount: boolean,
+    timeAdded: string
+
+
+
 }
-
-
 
 export enum CoverType {
     Hard = "Тверда",
@@ -22,7 +24,6 @@ export enum CoverType {
 export function calcSalary(price: number, amount: number): number {
     return price - (price * amount) / 100
 }
-
 
 export const books: BooksParam[] = [
     {
@@ -35,7 +36,9 @@ export const books: BooksParam[] = [
         language: "Українська",
         popularity: 0,
         imgHref: "",
-        salarydiscount: false
+        salarydiscount: true,
+        timeAdded: "",
+
     },
 
 
@@ -50,7 +53,8 @@ export const books: BooksParam[] = [
         language: "Українська",
         popularity: 0,
         imgHref: "",
-        salarydiscount: false
+        salarydiscount: true
+        , timeAdded: ""
 
 
     }, {
@@ -63,34 +67,8 @@ export const books: BooksParam[] = [
         language: "Українська",
         popularity: 0,
         imgHref: "",
-        salarydiscount: false
-
-    }
-    , {
-        author: "Фтщерук Хтось",
-        name: "Соляріс",
-        price: 320,
-        pageAmount: 328,
-        publishing: "Видавництво Старого Лева",
-        cover: CoverType.Hard,
-        language: "Українська",
-        popularity: 0,
-        imgHref: "",
-        salarydiscount: false
-
-    }
-    , {
-        author: "Фтщерук Хтось",
-        name: "Соляріс",
-        price: 320,
-        pageAmount: 328,
-        publishing: "Видавництво Старого Лева",
-        cover: CoverType.Hard,
-        language: "Українська",
-        popularity: 0,
-        imgHref: "",
-        salarydiscount: false
-
+        salarydiscount: false,
+        timeAdded: ""
 
 
     }
@@ -104,9 +82,36 @@ export const books: BooksParam[] = [
         language: "Українська",
         popularity: 0,
         imgHref: "",
-        salarydiscount: false
+        salarydiscount: false,
+        timeAdded: ""
 
+    }
+    , {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
 
+    }
+    , {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
 
     }
 ];

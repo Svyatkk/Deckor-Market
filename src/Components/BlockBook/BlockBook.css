@@ -52,6 +52,8 @@
     transition: 0.3s ease-in-out;
 
 
+
+
 }
 
 
@@ -68,23 +70,14 @@
 
 .block:hover .background_img img {
     transform: scale(0.9);
-
-
-
 }
-
 
 .block:hover .background_img {
     transform: translateY(10px);
-
-
 }
 
 .block:hover {
     height: 420px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-
-
-
 }

@@ -1,21 +1,24 @@
 
 import './BanerBookBlock.css'
+import { books } from '../../Data/book'
 
 
 
-export default function BanerBookBlock() {
+type BanerProps = {
+    textBaner: 'Акція' | 'Новинка' | 'Ексклюзив'
+
+
+}
+
+export default function BanerBookBlock({ textBaner }: BanerProps) {
+
     return (
         <>
 
             <section className="baner_block">
 
 
-
-
-
-                Акція
-
-
+                {textBaner}
 
             </section>
         </>
