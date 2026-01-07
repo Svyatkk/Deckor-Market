@@ -3,6 +3,67 @@ main {
     height: auto;
     border: 1px solid white;
     margin: 0 auto;
+}
+
+.swiper {
+    height: 400px;
+    width: 100%;
+    border: 1px solid white;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slide {
+    width: 50%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.nextSlide {
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    left: 10px;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0;
+
+    transition: 0.5s;
 
 
+
+
+}
+
+.prevSlide {
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    right: 10px;
+    cursor: pointer;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 0.5s;
+
+    border: 0;
+}
+
+.prevSlide:hover,
+.nextSlide:hover {
+    border: 1px solid white;
+    transition: 0.5s;
 }

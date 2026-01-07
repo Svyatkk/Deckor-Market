@@ -9,11 +9,10 @@ type BlockBookProps = {
 }
 
 
-
-
 export default function BlockBook({ book, childrenBaner }: BlockBookProps) {
     return (
         <>
+
             <div className='block'>
                 <div className='baner'>
                     {childrenBaner}
@@ -22,6 +21,7 @@ export default function BlockBook({ book, childrenBaner }: BlockBookProps) {
                 <p className='author_block'>{book.author}</p>
                 <h1 className='name_block'>{book.name}</h1>
                 <h3 className='price_block'>{book.price} грн</h3>
+
 
 
                 <div className='background_img'>

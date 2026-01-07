@@ -16,8 +16,6 @@ export default function ShowPagePopularity() {
 
                     {books.filter(book => book.price > 300 && book.salarydiscount === false).map((book) => (
 
-
-
                         < BlockBook book={{ ...book, price: calcSalary(book.price, 13) }} childrenBaner={<BanerBookBlock textBaner="Ексклюзив"></BanerBookBlock>}></BlockBook>
                     ))}
                 </div>

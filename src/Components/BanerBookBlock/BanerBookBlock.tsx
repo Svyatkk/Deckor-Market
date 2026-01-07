@@ -21,6 +21,7 @@ export default function BanerBookBlock({ textBaner }: BanerProps) {
 
             <section className={`baner_block baner_${textBaner}`}>
                 {textBaner}
+
             </section>
         </>
     )

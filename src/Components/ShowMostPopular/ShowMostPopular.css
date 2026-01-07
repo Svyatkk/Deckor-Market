@@ -1,8 +1,6 @@
 .block_popularity {
     display: flex;
     gap: 20px;
-
-
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
@@ -10,6 +8,10 @@
     margin-top: 100px;
     border: 1px solid white;
     border-radius: 25px;
+    box-sizing: border-box;
+
+
+
 
 }
 
@@ -20,8 +22,5 @@
     position: absolute;
     top: -25px;
     left: 0;
-
-
-
 
 }

@@ -21,6 +21,7 @@ export enum CoverType {
 }
 
 
+
 export function calcSalary(price: number, amount: number): number {
     return price - (price * amount) / 100
 }
@@ -40,9 +41,6 @@ export const books: BooksParam[] = [
         timeAdded: "",
 
     },
-
-
-
     {
         author: "Хтось Хтось",
         name: "1984",
@@ -53,11 +51,23 @@ export const books: BooksParam[] = [
         language: "Українська",
         popularity: 0,
         imgHref: "",
-        salarydiscount: true
-        , timeAdded: ""
-
-
-    }, {
+        salarydiscount: true,
+        timeAdded: ""
+    },
+    {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
+    },
+    {
         author: "Фтщерук Хтось",
         name: "Соляріс",
         price: 320,
@@ -70,9 +80,8 @@ export const books: BooksParam[] = [
         salarydiscount: false,
         timeAdded: ""
 
-
-    }
-    , {
+    },
+    {
         author: "Фтщерук Хтось",
         name: "Соляріс",
         price: 320,
@@ -84,23 +93,8 @@ export const books: BooksParam[] = [
         imgHref: "",
         salarydiscount: false,
         timeAdded: ""
-
-    }
-    , {
-        author: "Фтщерук Хтось",
-        name: "Соляріс",
-        price: 320,
-        pageAmount: 328,
-        publishing: "Видавництво Старого Лева",
-        cover: CoverType.Hard,
-        language: "Українська",
-        popularity: 0,
-        imgHref: "",
-        salarydiscount: false,
-        timeAdded: ""
-
-    }
-    , {
+    },
+    {
         author: "Фтщерук Хтось",
         name: "Соляріс",
         price: 320,
