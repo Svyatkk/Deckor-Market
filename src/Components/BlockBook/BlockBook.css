@@ -12,6 +12,8 @@
     position:
         relative;
     z-index: 10000;
+    min-width: 230px !important;
+
 
 }
 

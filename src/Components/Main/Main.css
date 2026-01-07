@@ -5,7 +5,7 @@ main {
     margin: 0 auto;
 }
 
-.swiper {
+.swiperMain {
     height: 400px;
     width: 100%;
     border: 1px solid white;
@@ -13,7 +13,7 @@ main {
     position: relative;
 }
 
-.slide {
+.slideMain {
     width: 50%;
     height: 100%;
     border: 1px solid white;

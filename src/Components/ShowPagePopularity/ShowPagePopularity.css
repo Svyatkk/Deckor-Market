@@ -10,4 +10,25 @@
     border-radius: 25px;
 
 
+
+    position: relative;
+}
+
+.block_popular>h1 {
+    color: white;
+    top: 0;
+    left: 0;
+
+    position: absolute;
+}
+
+.swiperPage {
+    border: 1px solid white;
+    padding: 20px !important;
+}
+
+.slidePage {
+
+
+    margin: 30px !important;
 }

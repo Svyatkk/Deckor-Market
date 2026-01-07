@@ -24,6 +24,8 @@ export default function BlockBook({ book, childrenBaner }: BlockBookProps) {
 
 
 
+
+
                 <div className='background_img'>
                     <img src={book.imgHref} alt={book.name} />
                 </div>

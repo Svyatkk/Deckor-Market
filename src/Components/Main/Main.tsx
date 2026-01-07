@@ -3,7 +3,6 @@ import { books } from "../../Data/book";
 import { BooksParam } from "../../Data/book";
 import BlockBook from "../BlockBook/BlockBook";
 import "./Main.css";
-import ShowMostPopular from "../ShowMostPopular/ShowMostPopular";
 import ShowPagePopularity from "../ShowPagePopularity/ShowPagePopularity";
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import 'swiper/css'
@@ -31,16 +30,16 @@ export default function Main({ children }: MainProps) {
                 spaceBetween={40}
                 modules={[Navigation, Pagination]}
                 onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
-                className="swiper"
+                className="swiperMain"
             >
                 <button
                     className="prevSlide"
                     onClick={() => swiperRef.current?.slideNext()}><span>&gt;</span></button>
 
-                <SwiperSlide className="slide" />
-                <SwiperSlide className="slide" />
-                <SwiperSlide className="slide" />
-                <SwiperSlide className="slide" />
+                <SwiperSlide className="slideMain" />
+                <SwiperSlide className="slideMain" />
+                <SwiperSlide className="slideMain" />
+                <SwiperSlide className="slideMain" />
 
 
                 <button
@@ -49,12 +48,9 @@ export default function Main({ children }: MainProps) {
                 ><span>&lt;</span></button>
             </Swiper>
 
+            <ShowPagePopularity textBaner={'Ексклюзив'} />
+            <ShowPagePopularity textBaner={'Акція'} />
 
-
-
-
-            <ShowMostPopular />
-            <ShowPagePopularity />
         </main>
     )
 }

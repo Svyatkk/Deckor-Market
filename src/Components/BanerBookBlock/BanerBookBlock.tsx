@@ -3,18 +3,12 @@ import './BanerBookBlock.css'
 import { books } from '../../Data/book'
 
 
-
 export type BanerProps = {
-
     textBaner: 'Акція' | 'Новинка' | 'Ексклюзив' | null
 }
 
-
-
 export default function BanerBookBlock({ textBaner }: BanerProps) {
     if (!textBaner) return null
-
-
 
     return (
         <>
