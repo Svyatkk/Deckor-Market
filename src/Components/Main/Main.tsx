@@ -35,8 +35,7 @@ export default function Main({ children }: MainProps) {
             >
                 <button
                     className="prevSlide"
-                    onClick={() => swiperRef.current?.slideNext()}
-                />
+                    onClick={() => swiperRef.current?.slideNext()}><span>&gt;</span></button>
 
                 <SwiperSlide className="slide" />
                 <SwiperSlide className="slide" />
@@ -47,8 +46,12 @@ export default function Main({ children }: MainProps) {
                 <button
                     className="nextSlide"
                     onClick={() => swiperRef.current?.slidePrev()}
-                />
+                ><span>&lt;</span></button>
             </Swiper>
+
+
+
+
 
             <ShowMostPopular />
             <ShowPagePopularity />

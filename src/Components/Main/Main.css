@@ -67,3 +67,13 @@ main {
     border: 1px solid white;
     transition: 0.5s;
 }
+
+.prevSlide span,
+.nextSlide span {
+    color: white;
+    font-size: 1.5em;
+    align-items: center;
+    align-content: center;
+
+
+}
