@@ -49,7 +49,6 @@ export default function Main({ children }: MainProps) {
             </Swiper>
 
             <ShowPagePopularity textBaner={'Ексклюзив'} />
-            <ShowPagePopularity textBaner={'Акція'} />
             <ShowPagePopularity textBaner={'Новинка'} />
 
         </main>

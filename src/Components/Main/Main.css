@@ -8,6 +8,8 @@ main {
 .swiperMain {
     height: 400px;
     width: 100%;
+
+
     border: 1px solid white;
     margin-top: 20px;
     position: relative;

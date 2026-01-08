@@ -28,6 +28,7 @@ export default function ShowPagePopularity({ textBaner }: BanerProps) {
             case 'Акція':
                 return books.filter(book => book.salarydiscount === true)
 
+
             case 'Новинка':
                 return books.filter(book => book.price > 100)
 
@@ -63,11 +64,7 @@ export default function ShowPagePopularity({ textBaner }: BanerProps) {
                                         childrenBaner={<BanerBookBlock textBaner={textBaner} />}
                                     />
                                 </SwiperSlide>
-
-
                             )
-
-
 
                         }
 
