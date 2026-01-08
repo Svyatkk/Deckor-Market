@@ -11,8 +11,6 @@ export type BooksParam = {
     salarydiscount: boolean,
     timeAdded: string
 
-
-
 }
 
 export enum CoverType {
@@ -79,7 +77,6 @@ export const books: BooksParam[] = [
         imgHref: "",
         salarydiscount: false,
         timeAdded: ""
-
     },
     {
         author: "Фтщерук Хтось",

@@ -50,6 +50,7 @@ export default function Main({ children }: MainProps) {
 
             <ShowPagePopularity textBaner={'Ексклюзив'} />
             <ShowPagePopularity textBaner={'Акція'} />
+            <ShowPagePopularity textBaner={'Новинка'} />
 
         </main>
     )

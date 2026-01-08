@@ -4,7 +4,7 @@ import { books } from '../../Data/book'
 
 
 export type BanerProps = {
-    textBaner: 'Акція' | 'Новинка' | 'Ексклюзив' | null
+    textBaner: 'Акція' | 'Новинка' | 'Ексклюзив'
 }
 
 export default function BanerBookBlock({ textBaner }: BanerProps) {
