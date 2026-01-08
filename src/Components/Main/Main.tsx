@@ -19,8 +19,6 @@ export default function Main({ children }: MainProps) {
 
     const swiperRef = useRef<SwiperType | null>(null)
 
-
-
     return (
         <main>
             {children}
@@ -29,7 +27,7 @@ export default function Main({ children }: MainProps) {
                     slidesPerView={2.5}
                     spaceBetween={40}
                     modules={[Navigation, Pagination]}
-                    pagination={{ type: 'progressbar' }}
+                    pagination={{ type: 'progressbar', el: '.custom-pagination-container' }}
                     onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
                     className="swiperMain"
                 >
@@ -38,21 +36,33 @@ export default function Main({ children }: MainProps) {
                     <SwiperSlide className="slideMain" />
                     <SwiperSlide className="slideMain" />
                     <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+
                 </Swiper>
 
                 <button
                     className="prevSlide"
-                    onClick={() => swiperRef.current?.slidePrev()}
-                >
-                    ‹
-                </button>
-
-                <button
-                    className="nextSlide"
                     onClick={() => swiperRef.current?.slideNext()}
                 >
                     ›
                 </button>
+
+                <button
+                    className="nextSlide"
+                    onClick={() => swiperRef.current?.slidePrev()}
+
+                >
+                    ‹
+
+                </button>
+
+                <div className="custom-pagination-container"></div>
+
             </div>
 
 

@@ -2,6 +2,7 @@ import './BlockBook.css'
 import { books, BooksParam } from "../../Data/book";
 import BanerBookBlock from '../BanerBookBlock/BanerBookBlock';
 import { Children, ReactNode } from 'react';
+import { Link } from 'react-router-dom'; // 1. Імпортуємо Link
 
 type BlockBookProps = {
     book: BooksParam;
@@ -13,22 +14,28 @@ export default function BlockBook({ book, childrenBaner }: BlockBookProps) {
     return (
         <>
 
-            <div className='block'>
-                <div className='baner'>
-                    {childrenBaner}
-                </div>
-
-                <p className='author_block'>{book.author}</p>
-                <h1 className='name_block'>{book.name}</h1>
-                <h3 className='price_block'>{book.price} грн</h3>
+            <div
+                className='block'>
+                <Link to={`/book/${book.name}`} style={{ textDecoration: 'none', color: 'inherit' }}>
 
 
+                    <div className='baner'>
+                        {childrenBaner}
+                    </div>
+
+                    <p className='author_block'>{book.author}</p>
+                    <h1 className='name_block'>{book.name}</h1>
+                    <h3 className='price_block'>{book.price} грн</h3>
 
 
 
-                <div className='background_img'>
-                    <img src={book.imgHref} alt={book.name} />
-                </div>
+
+
+                    <div className='background_img'>
+                        <img src={book.imgHref} alt={book.name} />
+                    </div>
+                </Link>
+
             </div >
         </>
 

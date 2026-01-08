@@ -1,5 +1,5 @@
 main {
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     background-color: #151412;
@@ -10,10 +10,11 @@ main {
     height: 400px;
     width: 100%;
     --swiper-theme-color: #ffffff;
-    overflow: visible;
-    border: 1px solid white;
+    overflow: hidden;
     margin-top: 20px;
     position: relative;
+    padding: 50px !important;
+
 }
 
 .slideMain {
@@ -21,6 +22,10 @@ main {
     height: 100%;
     border: 1px solid white;
     border-radius: 20px;
+    margin-bottom: 100px;
+    z-index: 1000;
+
+
 }
 
 .nextSlide {
@@ -43,26 +48,38 @@ main {
 }
 
 
+
 .swiperContainer {
-    border: 1px solid red;
-    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+
+
+
 }
 
-.swiper-pagination {
-    position: absolute;
-    bottom: -20px;
-    /* 🔽 реально опускає */
-    left: 0;
-    width: 100%;
-}
-
-.swiper-pagination-progressbar {
-    height: 3px;
+.custom-pagination-container {
+    height: 2px !important;
     background: rgba(255, 255, 255, 0.3);
+
+    width: 93% !important;
+
+
+    position: absolute;
+    bottom: 0 !important;
+    top: auto !important;
+
+    left: 50% !important;
+    transform: translateX(-50%);
+
+    z-index: 10;
 }
 
-.swiper-pagination-progressbar-fill {
-    background: white;
+.custom-pagination-container .swiper-pagination-progressbar-fill {
+    background: white !important;
+    height: 100%;
+    display: block;
+
+
 }
 
 .prevSlide {
@@ -98,4 +115,10 @@ main {
     align-content: center;
 
 
+}
+
+.prevSlide,
+.nextSlide {
+    font-size: 20px;
+    color: white;
 }

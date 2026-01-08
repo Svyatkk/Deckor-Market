@@ -1,25 +1,30 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Імпортуємо компоненти роутера
 import './App.css';
 import Nav from './Components/Nav/Nav';
 import Main from './Components/Main/Main';
-import BlockBook from './Components/BlockBook/BlockBook';
-
-
-
+// Імпортуйте сторінку детальної інформації (переконайтесь у правильності шляху)
+import BookInformation from './Components/Pages/BookInformation';
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter> {/* Огортаємо весь додаток */}
+      <div className="App">
 
+        <Routes>
+          {/* Головна сторінка */}
+          <Route path="/" element={
+            <Main>
+              <Nav /> {/* Навігація зазвичай доступна на всіх сторінках */}
 
+            </Main>
+          } />
 
-      <Main>
-        <Nav></Nav>
-
-
-      </Main>
-
-    </div>
+          {/* Сторінка книги. :id - це динамічний параметр */}
+          <Route path="/book/:name" element={<BookInformation />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
