@@ -49,11 +49,19 @@ export default function ShowPagePopularity({ textBaner }: BanerProps) {
 
                     <h1>{textBaner}</h1>
                     <Swiper
-                        slidesPerView={6}
+                        slidesPerView="auto"
+
                         spaceBetween={20}
                         modules={[Navigation, Pagination]}
                         onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
                         className="swiperPage"
+                        breakpoints={{
+                            0: { slidesPerView: 1 },
+                            480: { slidesPerView: 2 },
+                            768: { slidesPerView: 3 },
+                            1024: { slidesPerView: 4 },
+                            1280: { slidesPerView: 6 },
+                        }}
                     >
 
                         {

@@ -1,15 +1,8 @@
 .block_popular {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
     position: relative;
     padding: 50px;
-    border: 1px solid red;
     border-radius: 25px;
     margin-top: 20px;
-
-    position: relative;
 }
 
 .block_popular>h1 {
@@ -23,7 +16,8 @@
 
 
 .swiperPage {
-    border: 1px solid white;
     padding: 20px !important;
     margin-top: 40px;
+    overflow: hidden;
+    width: 100%;
 }

@@ -103,8 +103,85 @@ export const books: BooksParam[] = [
         imgHref: "",
         salarydiscount: false,
         timeAdded: ""
-
-    }
+    },
+    {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
+    },
+    {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
+    },
+    {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
+    },
+    {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
+    },
+    {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
+    },
+    {
+        author: "Фтщерук Хтось",
+        name: "Соляріс",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: false,
+        timeAdded: ""
+    },
 ];
 
 

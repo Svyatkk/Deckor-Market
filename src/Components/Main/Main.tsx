@@ -24,33 +24,40 @@ export default function Main({ children }: MainProps) {
     return (
         <main>
             {children}
+            <div className="swiperContainer">
+                <Swiper
+                    slidesPerView={2.5}
+                    spaceBetween={40}
+                    modules={[Navigation, Pagination]}
+                    pagination={{ type: 'progressbar' }}
+                    onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
+                    className="swiperMain"
+                >
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                    <SwiperSlide className="slideMain" />
+                </Swiper>
 
-            <Swiper
-                slidesPerView={2.5}
-                spaceBetween={40}
-                modules={[Navigation, Pagination]}
-                onSwiper={(swiper: SwiperType) => (swiperRef.current = swiper)}
-                className="swiperMain"
-            >
                 <button
                     className="prevSlide"
-                    onClick={() => swiperRef.current?.slideNext()}><span>&gt;</span></button>
-
-                <SwiperSlide className="slideMain" />
-                <SwiperSlide className="slideMain" />
-                <SwiperSlide className="slideMain" />
-                <SwiperSlide className="slideMain" />
-
+                    onClick={() => swiperRef.current?.slidePrev()}
+                >
+                    ‹
+                </button>
 
                 <button
                     className="nextSlide"
-                    onClick={() => swiperRef.current?.slidePrev()}
-                ><span>&lt;</span></button>
-            </Swiper>
+                    onClick={() => swiperRef.current?.slideNext()}
+                >
+                    ›
+                </button>
+            </div>
+
 
             <ShowPagePopularity textBaner={'Ексклюзив'} />
             <ShowPagePopularity textBaner={'Новинка'} />
-
         </main>
     )
 }

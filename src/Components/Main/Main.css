@@ -1,15 +1,16 @@
 main {
     width: 70%;
     height: auto;
-    border: 1px solid white;
     margin: 0 auto;
+    background-color: #151412;
+
 }
 
 .swiperMain {
     height: 400px;
     width: 100%;
-
-
+    --swiper-theme-color: #ffffff;
+    overflow: visible;
     border: 1px solid white;
     margin-top: 20px;
     position: relative;
@@ -39,10 +40,29 @@ main {
     border: 0;
 
     transition: 0.5s;
+}
 
 
+.swiperContainer {
+    border: 1px solid red;
+    padding-bottom: 20px;
+}
 
+.swiper-pagination {
+    position: absolute;
+    bottom: -20px;
+    /* 🔽 реально опускає */
+    left: 0;
+    width: 100%;
+}
 
+.swiper-pagination-progressbar {
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-pagination-progressbar-fill {
+    background: white;
 }
 
 .prevSlide {

@@ -18,8 +18,6 @@ export default function Footer() {
                 <div className="">
 
 
-
-
                 </div>
 
             </div >
