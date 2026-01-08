@@ -64,6 +64,7 @@ export default function ShowPagePopularity({ textBaner }: BanerProps) {
                         }}
                     >
 
+
                         {
                             chosen.map(book =>
                                 <SwiperSlide className="slidePage">

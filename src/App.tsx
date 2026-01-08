@@ -5,6 +5,7 @@ import Nav from './Components/Nav/Nav';
 import Main from './Components/Main/Main';
 // Імпортуйте сторінку детальної інформації (переконайтесь у правильності шляху)
 import BookInformation from './Components/Pages/BookInformation';
+import ShowCategoryBooks from './Components/ShowCategoryBooks/ShowCategoryBooks';
 
 function App() {
   return (
@@ -22,10 +23,16 @@ function App() {
 
           {/* Сторінка книги. :id - це динамічний параметр */}
           <Route path="/book/:name" element={<BookInformation />} />
-        </Routes>
+
+          <Route path="/category/:mainCategory" element={<ShowCategoryBooks />} />
+
+          <Route path="/category/:mainCategory/:subCategory" element={<ShowCategoryBooks />} />        </Routes>
       </div>
     </BrowserRouter>
   );
 }
+
+
+
 
 export default App;

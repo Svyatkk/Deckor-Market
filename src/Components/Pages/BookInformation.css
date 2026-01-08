@@ -6,7 +6,42 @@
     border: 1px solid white;
     width: 80%;
     margin: 0 auto;
+}
 
+.panels {
+    width: 100%;
+    height: 100px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.show_img_books {
+    border: 3px solid yellow;
+    width: 50%;
+    height: 500px;
+
+}
+
+.show_parameters_books {
+    border: 1px solid white;
+    height: 500px;
+    width: 50%;
+
+}
+
+.show_parameters_books p {
+    color: gray;
+}
+
+.show_parameters_books h1 {
+    color: white;
+
+}
+
+.block_unit {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
 
 
 }

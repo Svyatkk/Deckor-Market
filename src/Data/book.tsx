@@ -42,6 +42,7 @@ export function calcSalary(price: number, amount: number): number {
 
 export const books: BooksParam[] = [
     {
+
         author: "Джордж Орвелл",
         name: "1984",
         price: 320,
@@ -58,6 +59,27 @@ export const books: BooksParam[] = [
             { mainCategory: "Художня література", subCategory: "Сучасна проза" }
         ]
     },
+
+
+    {
+
+        author: "Джордж Орвелл",
+        name: "dif",
+        price: 320,
+        pageAmount: 328,
+        publishing: "Видавництво Старого Лева",
+        cover: CoverType.Hard,
+        language: "Українська",
+        popularity: 0,
+        imgHref: "",
+        salarydiscount: true,
+        timeAdded: "",
+        genre: "Фантастика",
+        catalog: [
+            { mainCategory: "Художня література", subCategory: "Фантастика" }
+        ]
+    },
+
 
 
 
