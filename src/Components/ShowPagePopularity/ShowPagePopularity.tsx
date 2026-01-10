@@ -32,6 +32,7 @@ export default function ShowPagePopularity({ textBaner }: BanerProps) {
             case 'Новинка':
                 return books.filter(book => book.price > 100)
 
+
             default:
                 return []
         }
@@ -74,6 +75,8 @@ export default function ShowPagePopularity({ textBaner }: BanerProps) {
                                     />
                                 </SwiperSlide>
                             )
+
+
 
                         }
 

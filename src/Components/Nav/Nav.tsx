@@ -1,7 +1,10 @@
 import './Nav.css'
-
+import CatalogPanel from '../CatalogPanel/CatalogPanel'
+import { useState } from 'react'
 
 export default function Nav() {
+
+    const [isOpen, setIsOpen] = useState(false)
 
 
     return (
@@ -9,13 +12,22 @@ export default function Nav() {
             <nav>
 
                 <div className="logo">
+
                 </div>
 
                 <div className="searching_block">
 
 
-                    <a href="#" className="button_catalog">
-                        Catalog
+
+
+                    <a
+                        onClick={(e) => {
+                            e.preventDefault()
+
+                            setIsOpen(true)
+                        }}
+                        href='#' className="button_catalog">
+
 
 
                     </a>
@@ -28,6 +40,7 @@ export default function Nav() {
                     </label>
 
                     <button className="button_change_theme">
+
 
                     </button>
 
@@ -53,7 +66,8 @@ export default function Nav() {
 
 
 
-            </nav>
+            </nav >
+            <CatalogPanel isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
         </>
     )

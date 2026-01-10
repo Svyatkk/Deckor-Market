@@ -10,6 +10,7 @@ type BlockBookProps = {
 }
 
 
+
 export default function BlockBook({ book, childrenBaner }: BlockBookProps) {
     return (
         <>

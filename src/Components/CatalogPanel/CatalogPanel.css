@@ -1,0 +1,7 @@
+.catalog_panel {
+    display: none;
+}
+
+.catalog_panel.open {
+    display: block;
+}

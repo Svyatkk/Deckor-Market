@@ -6,7 +6,7 @@ import Main from './Components/Main/Main';
 // Імпортуйте сторінку детальної інформації (переконайтесь у правильності шляху)
 import BookInformation from './Components/Pages/BookInformation';
 import ShowCategoryBooks from './Components/ShowCategoryBooks/ShowCategoryBooks';
-
+import CatalogPanel from './Components/CatalogPanel/CatalogPanel';
 function App() {
   return (
     <BrowserRouter> {/* Огортаємо весь додаток */}
@@ -21,7 +21,7 @@ function App() {
             </Main>
           } />
 
-          {/* Сторінка книги. :id - це динамічний параметр */}
+
           <Route path="/book/:name" element={<BookInformation />} />
 
           <Route path="/category/:mainCategory" element={<ShowCategoryBooks />} />

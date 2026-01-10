@@ -34,12 +34,11 @@ export default function ShowCategoryBooks() {
 
             <div className='catpage'>
                 <div className='books'>
+
                     {filteredBooks.map((book, index) => (
                         <>
-                            <h1 key={index} >{book.author}</h1>
-                            <p>{book.name}</p>
-                            <p>{mainCategory}</p>
-                            <p>{subCategory}</p>
+
+                            <BlockBook book={book}></BlockBook>
                         </>
 
                     ))}

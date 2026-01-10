@@ -27,6 +27,7 @@ export default function BookInformation() {
     }
 
 
+
     return (
         <>
 
@@ -39,22 +40,19 @@ export default function BookInformation() {
                 <div className='panels'>
                     {currentBook.catalog.map((entry, index) => (
                         <div key={index} className="category-links">
-                            {/* Посилання на головну категорію */}
-                            <Link to={`/category/${encodeURIComponent(entry.mainCategory)}`}>
+                            <Link className='link' to={`/category/${encodeURIComponent(entry.mainCategory)}`}>
                                 {entry.mainCategory}
                             </Link>
 
-                            {' / '}
 
-                            {/* Посилання на конкретну підкатегорію */}
-                            <Link to={`/category/${encodeURIComponent(entry.mainCategory)}/${encodeURIComponent(entry.subCategory)}`}>
+                            <span style={{ color: 'gray' }}>|</span>
+
+                            <Link className='link' to={`/category/${encodeURIComponent(entry.mainCategory)}/${encodeURIComponent(entry.subCategory)}`}>
                                 {entry.subCategory}
                             </Link>
                         </div>
                     ))}
                 </div>
-
-
 
                 <div className='block_unit'>
 
@@ -63,8 +61,10 @@ export default function BookInformation() {
 
                     </div>
 
+
                     <div className='show_parameters_books'>
-                        <p>{currentBook.author}</p>
+
+                        <a href='#'>{currentBook.author}</a>
                         <h1>{currentBook.name}</h1>
 
                     </div>

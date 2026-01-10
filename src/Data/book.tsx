@@ -28,8 +28,20 @@ export const catalogs: CatalogMainItem[] = [
             { name: "Фантастика" },
             { name: "Містика і жахи" }
         ]
+    },
+    {
+
+        mainCategory: "Нонфікшн",
+        subCategories: [
+            { name: "Історія" },
+            { name: "Наука й технології" },
+            { name: "Мотивація й саморозвиток" },
+            { name: "Мистецтво і культура" }
+        ]
     }
 ];
+
+
 
 export enum CoverType {
     Hard = "Тверда",
